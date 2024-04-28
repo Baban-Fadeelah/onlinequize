@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Details</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light gray background */
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: #333; /* Dark gray text */
+        }
+
+        form {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff; /* White background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+
+        label {
+            font-size: 1.2em;
+            color: #555; /* Gray text */
+        }
+
+        select {
+            width: 100%;
+            padding: 15px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            border: 1px solid #ccc; /* Light gray border */
+            border-radius: 5px;
+            background-color: #f5f5f5; /* Lighter gray background */
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #fff; /* White text */
+            background-color: #007bff; /* Blue button */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Darker blue button on hover */
+        }
+    </style>
+</head>
+<body>
+<h1>Start Your Test Now!</h1>
+<form action="/exam/start" method="get">
+    <label for="testType">Select Test Type:</label>
+    <select name="testType" id="testType">
+        <option value="Physics">Physics</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Maths">Maths</option>
+    </select>
+    <button type="submit">Start Test</button>
+</form>
+</body>
+</html>
